@@ -92,3 +92,5 @@ gem "factory_bot_rails", "~> 5.1", :groups => [:development, :test]
 gem "react-rails", "~> 2.6"
 
 gem "optimist", "~> 3.0"
+
+gem "stripe", "~> 5.10"
