@@ -88,3 +88,5 @@ gem "rspec-rails", "~> 3.9", :groups => [:development, :test]
 gem "haml", "~> 5.1", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 5.1", :groups => [:development, :test]
+
+gem "react-rails", "~> 2.6"
