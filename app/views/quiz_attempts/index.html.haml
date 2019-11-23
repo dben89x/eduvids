@@ -1,0 +1,14 @@
+%p#notice= notice
+%h1 Quiz Attempts
+%table
+  %thead
+    %tr
+      %th{:colspan => "3"}
+  %tbody
+    - @quiz_attempts.each do |quiz_attempt|
+      %tr
+        %td= link_to 'Show', quiz_attempt
+        %td= link_to 'Edit', edit_quiz_attempt_path(quiz_attempt)
+        %td= link_to 'Destroy', quiz_attempt, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Quiz Attempt', new_quiz_attempt_path

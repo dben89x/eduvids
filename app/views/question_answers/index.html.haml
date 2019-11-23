@@ -1,0 +1,14 @@
+%p#notice= notice
+%h1 Question Answers
+%table
+  %thead
+    %tr
+      %th{:colspan => "3"}
+  %tbody
+    - @question_answers.each do |question_answer|
+      %tr
+        %td= link_to 'Show', question_answer
+        %td= link_to 'Edit', edit_question_answer_path(question_answer)
+        %td= link_to 'Destroy', question_answer, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Question Answer', new_question_answer_path
