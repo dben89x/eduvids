@@ -1,0 +1,25 @@
+%p#notice= notice
+%p
+  %strong Email:
+  = @user.email
+%p
+  %strong Encrypted password:
+  = @user.encrypted_password
+%p
+  %strong Reset password token:
+  = @user.reset_password_token
+%p
+  %strong Reset password sent at:
+  = @user.reset_password_sent_at
+%p
+  %strong Remember created at:
+  = @user.remember_created_at
+%p
+  %strong Created at:
+  = @user.created_at
+%p
+  %strong Updated at:
+  = @user.updated_at
+= link_to 'Edit', edit_user_path(@user)
+|
+= link_to 'Back', users_path

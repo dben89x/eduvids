@@ -10,6 +10,8 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+    @full = true
+    @props = {video: @video.as_json(include: :quizzes)}
   end
 
   # GET /videos/new
@@ -69,6 +71,6 @@ class VideosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
-      params.fetch(:video, {})
+      params.require(:video).permit(:url, :poster, :status, :created_at, :updated_at, :title, :description, :overview)
     end
 end

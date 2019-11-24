@@ -7,5 +7,26 @@
       %ul
         - question.errors.full_messages.each do |message|
           %li= message
+  .field
+    = form.label :quiz_id
+    = form.text_field :quiz_id
+  .field
+    = form.label :body
+    = form.text_area :body
+  .field
+    = form.label :position
+    = form.number_field :position
+  .field
+    = form.label :question_type
+    = form.number_field :question_type
+  .field
+    = form.label :created_at
+    = form.datetime_select :created_at
+  .field
+    = form.label :updated_at
+    = form.datetime_select :updated_at
+  .field
+    = form.label :answer_id
+    = form.text_field :answer_id
   .actions
     = form.submit

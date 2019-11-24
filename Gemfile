@@ -94,3 +94,7 @@ gem "react-rails", "~> 2.6"
 gem "optimist", "~> 3.0"
 
 gem "stripe", "~> 5.10"
+
+gem "materialize-sass", "~> 1.0"
+
+gem "jquery-rails", "~> 4.3"

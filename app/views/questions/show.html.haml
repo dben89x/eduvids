@@ -1,4 +1,25 @@
 %p#notice= notice
+%p
+  %strong Quiz:
+  = @question.quiz_id
+%p
+  %strong Body:
+  = @question.body
+%p
+  %strong Position:
+  = @question.position
+%p
+  %strong Question type:
+  = @question.question_type
+%p
+  %strong Created at:
+  = @question.created_at
+%p
+  %strong Updated at:
+  = @question.updated_at
+%p
+  %strong Answer:
+  = @question.answer_id
 = link_to 'Edit', edit_question_path(@question)
 |
 = link_to 'Back', questions_path

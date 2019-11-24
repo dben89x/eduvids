@@ -1,12 +1,13 @@
+require 'faker'
 module UserSeeds
 
   def self.create_rick_and_morty_users(amount=50)
-    names = 1000.times.map {Faker::RickAndMorty.character}.uniq
+    names = 1000.times.map {Faker::TvShows::RickAndMorty.character}.uniq
     create_users(names, amount)
   end
 
   def self.create_game_of_thrones_users(amount=50)
-    names = 1000.times.map {Faker::GameOfThrones.character}.uniq
+    names = 1000.times.map {Faker::TvShows::GameOfThrones.character}.uniq
     create_users(names, amount)
   end
 
@@ -22,9 +23,9 @@ module UserSeeds
     User.create(
       email: email || Faker::Internet.free_email("#{first_name} #{last_name}"),
       password: password,
-      first_name: first_name,
-      last_name: last_name,
-      remote_avatar_url: avatar,
+      # first_name: first_name,
+      # last_name: last_name,
+      # remote_avatar_url: avatar,
     )
   end
 end

@@ -1,21 +1,18 @@
-%h2 Sign up
-= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = render "devise/shared/error_messages", resource: resource
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    - if @minimum_password_length
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "new-password"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .actions
-    = f.submit "Sign up"
+.card-content
+  %h2.header.flow-text Sign up
+  = form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .row
+      .input-field.col.s12
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: 'validate'
+        = f.label :email
+    .row
+      .input-field.col.s12
+        = f.password_field :password, autocomplete: "password", class: 'validate'
+        = f.label :password
+    .row
+      .input-field.col.s12
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: 'validate'
+        = f.label :password_confirmation
+    %button.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{type: 'submit'} Sign up
 = render "devise/shared/links"

@@ -4,7 +4,6 @@ class CreateQuizAttempts < ActiveRecord::Migration[6.0]
       t.belongs_to :user
       t.belongs_to :quiz
       t.integer :status
-      t.integer :status
       t.timestamps
     end
   end

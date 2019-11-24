@@ -7,5 +7,29 @@
       %ul
         - video.errors.full_messages.each do |message|
           %li= message
+  .field
+    = form.label :url
+    = form.text_field :url
+  .field
+    = form.label :poster
+    = form.text_field :poster
+  .field
+    = form.label :status
+    = form.number_field :status
+  .field
+    = form.label :created_at
+    = form.datetime_select :created_at
+  .field
+    = form.label :updated_at
+    = form.datetime_select :updated_at
+  .field
+    = form.label :title
+    = form.text_field :title
+  .field
+    = form.label :description
+    = form.text_area :description
+  .field
+    = form.label :overview
+    = form.text_field :overview
   .actions
     = form.submit

@@ -7,5 +7,17 @@
       %ul
         - answer.errors.full_messages.each do |message|
           %li= message
+  .field
+    = form.label :created_at
+    = form.datetime_select :created_at
+  .field
+    = form.label :updated_at
+    = form.datetime_select :updated_at
+  .field
+    = form.label :body
+    = form.text_area :body
+  .field
+    = form.label :question_id
+    = form.text_field :question_id
   .actions
     = form.submit

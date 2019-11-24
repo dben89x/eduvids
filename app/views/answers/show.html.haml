@@ -1,4 +1,16 @@
 %p#notice= notice
+%p
+  %strong Created at:
+  = @answer.created_at
+%p
+  %strong Updated at:
+  = @answer.updated_at
+%p
+  %strong Body:
+  = @answer.body
+%p
+  %strong Question:
+  = @answer.question_id
 = link_to 'Edit', edit_answer_path(@answer)
 |
 = link_to 'Back', answers_path

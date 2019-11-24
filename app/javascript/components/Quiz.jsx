@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-class Foobar extends React.Component {
+
+class Quiz extends React.Component {
   render () {
     return (
       <React.Fragment>
@@ -9,4 +10,4 @@ class Foobar extends React.Component {
   }
 }
 
-export default Foobar
+export default Quiz

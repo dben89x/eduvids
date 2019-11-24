@@ -1,0 +1,50 @@
+:javascript
+  document.addEventListener('turbolinks:load', function() {
+    elem = document.querySelector('#slide-out');
+    instance = new M.Sidenav(elem, {});
+  });
+  document.addEventListener('turbolinks:before-visit', function() {
+    elem = document.querySelector('#slide-out');
+    instance = M.Sidenav.getInstance(elem);
+    if (instance){ instance.destroy(); }
+  });
+
+%header
+  %ul#slide-out.sidenav
+    %li
+      .user-view
+        .background.blue-grey.darken-2
+          -# %img{:src => "images/office.jpg"}/
+        %a{:href => new_user_session_path}
+          %img.circle{:src => "https://robohash.org/#{SecureRandom.hex(10)}.png?size=400x400&set=set4"}/
+        -# %a{:href => "#name"}
+        %span.white-text.name=current_user&.email
+        %span.white-text.name Name
+    %li
+      %a{:href => "/"}
+        -# %i.material-icons> cloud
+        Home
+        -# First Link With Icon
+    %li
+      %a{:href => "#!"} Second Link
+    %li
+      .divider
+    %li
+      %a.subheader Subheader
+    %li
+      %a.waves-effect{:href => "#!"} Another link
+
+  %nav.blue-grey
+    .nav-wrapper
+      -# %a#slide-out.sidenav-trigger{"data-target" => "slide-out", href: '#', style: 'display: inline'} YSM
+      %a.brand-logo{:href => "/"} YSM
+      %ul#nav-mobile.right.hide-on-med-and-down
+        - if user_signed_in?
+          %li= link_to "Sign out", destroy_user_session_path, method: :delete
+        - else
+          %li= link_to "Sign in", new_user_session_path
+          %li= link_to "Sign up", new_user_registration_path, class: "waves-effect waves-light btn blue-grey darken-4"
+
+
+    -# %a.sidenav-trigger{"data-target" => "slide-out", :href => "#"}
+  -#   %i.material-icons menu

@@ -3,10 +3,36 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Eduvids
+    %meta{name: "viewport", content: "width=max-device-width,initial-scale=1.0,user-scalable=no"}
+    %meta{name: "HandheldFriendly", content: "true"}
+
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application'
-  %body
-    = yield
+
+  %body.blue-grey.lighten-5
+    = render 'layouts/header'
+
+    .valign-wrapper
+      -if devise_controller?
+        .container
+          .row
+            .col.card.s12.m6.offset-m3.blue-grey-text.text-darken-2
+              .card-content
+                = yield
+      - else
+        - unless @full
+          .container
+            .row
+              = yield
+        - else
+          = yield
+
+  -# %script{type: "text/javascript", "data-turbolinks-eval" => "always"}
+  -#   :plain
+  -#     console.log(document.querySelector('#slide-out'))
+  -#     document.addEventListener('page:load', function() {
+  -#      elem = document.querySelector('#slide-out');
+  -#     });
