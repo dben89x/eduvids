@@ -15,20 +15,20 @@
   %body.blue-grey.lighten-5
     = render 'layouts/header'
 
-    .valign-wrapper
-      -if devise_controller?
+    -if devise_controller?
+      .valign-wrapper
         .container
           .row
             .col.card.s12.m6.offset-m3.blue-grey-text.text-darken-2
               .card-content
                 = yield
-      - else
-        - unless @full
-          .container
-            .row
-              = yield
-        - else
+
+    - unless @full
+      .container
+        .row
           = yield
+    - else
+      = yield
 
   -# %script{type: "text/javascript", "data-turbolinks-eval" => "always"}
   -#   :plain

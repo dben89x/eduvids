@@ -1,28 +1,30 @@
-%p#notice= notice
-%h1 Videos
-%table
-  %thead
-    %tr
-      %th Poster
-      %th Status
-      %th Created at
-      %th Updated at
-      %th Title
-      %th Description
-      %th Overview
-      %th{:colspan => "3"}
-  %tbody
-    - @videos.each do |video|
-      %tr
-        %td= video.poster
-        %td= video.status
-        %td= video.created_at
-        %td= video.updated_at
-        %td= video.title
-        %td= video.description
-        %td= video.overview
-        %td= link_to 'Show', video
-        %td= link_to 'Edit', edit_video_path(video)
-        %td= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Video', new_video_path
+= react_component 'Videos', @props
+
+-# %p#notice= notice
+-# %h1 Videos
+-# %table
+-#   %thead
+-#     %tr
+-#       %th Poster
+-#       %th Status
+-#       %th Created at
+-#       %th Updated at
+-#       %th Title
+-#       %th Description
+-#       %th Overview
+-#       %th{:colspan => "3"}
+-#   %tbody
+-#     - @videos.each do |video|
+-#       %tr
+-#         %td= video.poster
+-#         %td= video.status
+-#         %td= video.created_at
+-#         %td= video.updated_at
+-#         %td= video.title
+-#         %td= video.description
+-#         %td= video.overview
+-#         %td= link_to 'Show', video
+-#         %td= link_to 'Edit', edit_video_path(video)
+-#         %td= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }
+-# %br/
+-# = link_to 'New Video', new_video_path

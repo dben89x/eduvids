@@ -13,3 +13,18 @@
 nav .sidenav-trigger {
   margin: 0 !important;
 }
+.nopad {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.videos-wrapper, .video-wrapper {
+  height: calc(100vh - 64px) !important;
+  overflow: scroll !important;
+}
+.video-wrapper {
+  // padding: 1rem !important;
+}
+// Override Material bug
+input[type=radio] {
+  display: none;
+}

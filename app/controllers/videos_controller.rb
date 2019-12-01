@@ -4,7 +4,20 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
+    @full = true
     @videos = Video.all
+    @videos.current_attempt = current_user.quiz_attempts.last
+    @videos = @videos.as_json(
+      only: %i[id url title description],
+      include: {
+        quizzes: {
+          only: %i[],
+          methods: :random_questions
+        }
+      }
+    )
+
+    @props = {videos: @videos}
   end
 
   # GET /videos/1
