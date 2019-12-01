@@ -19,4 +19,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :question_answers
+  has_many :quiz_attempts
+
+  def admin?
+    false
+  end
 end

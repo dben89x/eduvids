@@ -15,6 +15,7 @@ class QuizAttempt < ApplicationRecord
   belongs_to :user
 
   delegate :question_count, to: :quiz
+  scope :completed, -> {where(status: ['passed', 'failed'])}
 
   enum status: %i[pending passed failed]
 end

@@ -98,3 +98,5 @@ gem "stripe", "~> 5.10"
 gem "materialize-sass", "~> 1.0"
 
 gem "jquery-rails", "~> 4.3"
+
+gem "pundit", "~> 2.1"

@@ -5,8 +5,8 @@ class VideosController < ApplicationController
   # GET /videos.json
   def index
     @full = true
-    @videos = Video.all
-    @videos.current_attempt = current_user.quiz_attempts.last
+    @videos = authorize Video.all
+    @current_attempt = current_user.quiz_attempts.completed.last
     @videos = @videos.as_json(
       only: %i[id url title description],
       include: {
