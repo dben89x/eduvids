@@ -85,7 +85,7 @@ gem "erb2haml", "~> 0.1", :group => :development
 
 gem "rspec-rails", "~> 3.9", :groups => [:development, :test]
 
-gem "haml", "~> 5.1", :groups => [:development, :test]
+gem "haml", "~> 5.1"
 
 gem "factory_bot_rails", "~> 5.1", :groups => [:development, :test]
 
