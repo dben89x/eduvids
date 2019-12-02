@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_24_104524) do
+ActiveRecord::Schema.define(version: 2019_12_02_080427) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,15 +23,34 @@ ActiveRecord::Schema.define(version: 2019_11_24_104524) do
     t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
+  create_table "certificate_attempts", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "certificate_id"
+    t.integer "status", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["certificate_id"], name: "index_certificate_attempts_on_certificate_id"
+    t.index ["user_id"], name: "index_certificate_attempts_on_user_id"
+  end
+
+  create_table "certificates", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_certificates_on_user_id"
+  end
+
   create_table "question_answers", force: :cascade do |t|
     t.bigint "question_id"
     t.bigint "answer_id"
-    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "quiz_attempt_id"
+    t.boolean "correct"
     t.index ["answer_id"], name: "index_question_answers_on_answer_id"
     t.index ["question_id"], name: "index_question_answers_on_question_id"
-    t.index ["user_id"], name: "index_question_answers_on_user_id"
+    t.index ["quiz_attempt_id"], name: "index_question_answers_on_quiz_attempt_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -47,13 +66,13 @@ ActiveRecord::Schema.define(version: 2019_11_24_104524) do
   end
 
   create_table "quiz_attempts", force: :cascade do |t|
-    t.bigint "user_id"
     t.bigint "quiz_id"
-    t.integer "status"
+    t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "certificate_attempt_id"
+    t.index ["certificate_attempt_id"], name: "index_quiz_attempts_on_certificate_attempt_id"
     t.index ["quiz_id"], name: "index_quiz_attempts_on_quiz_id"
-    t.index ["user_id"], name: "index_quiz_attempts_on_user_id"
   end
 
   create_table "quizzes", force: :cascade do |t|

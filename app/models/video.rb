@@ -14,9 +14,15 @@
 #
 
 class Video < ApplicationRecord
-  has_many :quizzes
+  has_many :quizzes, dependent: :destroy
+  has_many :quiz_attempts, through: :quizzes
 
   enum status: %i[published unpublished]
+  validates :quizzes, length: { maximum: 1 }
+
+  def quiz
+    quizzes.last
+  end
 
   def react_json
     self.as_json(

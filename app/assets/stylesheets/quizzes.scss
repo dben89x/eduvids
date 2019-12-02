@@ -1,3 +1,13 @@
-// Place all the styles related to the quizzes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.quiz-container {
+  margin: 2rem 0px 6rem;
+
+  hgroup {
+    margin: 2rem 0;
+  }
+  input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:after {
+    background-color: lighten(#263238, 10%);
+  }
+  input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:before, input[type=radio].with-gap:checked + span:after {
+    border-color: lighten(#263238, 10%);
+  }
+}

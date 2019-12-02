@@ -57,10 +57,9 @@ class Snacks extends React.Component {
     const {open} = this.state
     const { className, messages, onClose, variant, ...other } = this.props
 
-    const SimpleSnackbar = () => {
+    const FlashBar = () => {
       const classes = useStyles()
       const Icon = variantIcon[variant]
-      console.log(variant)
       return (
         <React.Fragment>
           <Snackbar
@@ -87,7 +86,7 @@ class Snacks extends React.Component {
     }
 
     return (
-      <SimpleSnackbar/>
+      <FlashBar/>
     )
   }
 }

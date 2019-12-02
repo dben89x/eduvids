@@ -18,10 +18,16 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :question_answers
-  has_many :quiz_attempts
+  has_many :question_answers, dependent: :destroy
+  has_many :certificate_attempts, dependent: :destroy
+
+  has_many :quiz_attempts, through: :certificate_attempts
 
   def admin?
     false
+  end
+
+  def current_attempt
+    certificate_attempts.last || certificate_attempts.create
   end
 end

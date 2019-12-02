@@ -12,6 +12,25 @@ class QuizAttemptsController < ApplicationController
   def show
   end
 
+  def current
+    quiz = Video.find(params[:video_id]).quiz
+    if current_attempt.quiz_attempts.where(quiz: quiz).any?
+      @quiz_attempt = authorize current_user.quiz_attempts.where(quiz_id: quiz.id).last
+    else
+      @quiz_attempt = QuizAttempt.create(quiz: quiz, certificate_attempt: current_attempt)
+    end
+    # if current_user.current_attempt.remaining_quizzes.include?(quiz)
+    # else
+    #   redirect_to root_path
+    # end
+    Rails.logger.debug { @quiz_attempt }
+    if @quiz_attempt.complete
+      render json: @quiz_attempt.as_json(only: %i[], methods: %i[complete next_attempt]), status: :ok
+    else
+      render json: @quiz_attempt.react_json, status: :ok
+    end
+  end
+
   # GET /quiz_attempts/new
   def new
     @quiz_attempt = QuizAttempt.new

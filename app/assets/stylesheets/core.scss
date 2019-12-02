@@ -28,3 +28,9 @@ nav .sidenav-trigger {
 input[type=radio] {
   display: none;
 }
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}

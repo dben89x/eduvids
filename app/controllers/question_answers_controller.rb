@@ -1,5 +1,6 @@
 class QuestionAnswersController < ApplicationController
   before_action :set_question_answer, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token, only: :create
 
   # GET /question_answers
   # GET /question_answers.json
@@ -24,17 +25,21 @@ class QuestionAnswersController < ApplicationController
   # POST /question_answers
   # POST /question_answers.json
   def create
-    @question_answer = QuestionAnswer.new(question_answer_params)
+    answer = Answer.find(params[:answer_id])
+    question = answer.question
+    quiz = question.quiz
 
-    respond_to do |format|
-      if @question_answer.save
-        format.html { redirect_to @question_answer, notice: 'Question answer was successfully created.' }
-        format.json { render :show, status: :created, location: @question_answer }
-      else
-        format.html { render :new }
-        format.json { render json: @question_answer.errors, status: :unprocessable_entity }
-      end
+    @quiz_attempt = authorize QuizAttempt.find(params[:quiz_attempt_id]), :show?
+    question_answer = @quiz_attempt.question_answers.create(question: question, answer: answer)
+
+    if @quiz_attempt.complete
+      render json: @quiz_attempt.as_json(only: %i[], methods: %i[complete next_attempt]), status: :ok
+    else
+      render json: @quiz_attempt.react_json, status: :ok
     end
+  rescue StandardError => e
+    Rails.logger.debug { e.inspect }
+    render json: question_answer.errors, status: :unprocessable_entity
   end
 
   # PATCH/PUT /question_answers/1

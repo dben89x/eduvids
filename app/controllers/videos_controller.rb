@@ -4,20 +4,18 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
+    redirect_to '/results' if current_attempt.complete
     @full = true
     @videos = authorize Video.all
     @current_attempt = current_user.quiz_attempts.completed.last
-    @videos = @videos.as_json(
-      only: %i[id url title description],
-      include: {
-        quizzes: {
-          only: %i[],
-          methods: :random_questions
-        }
-      }
-    )
+    @videos = @videos.map do |video|
+      video.as_json(only: %i[id url title description]).merge(
+        complete: current_attempt.quiz_attempts.complete.where(quiz: video.quiz).any?
+      )
+    end
+    # @videos = @videos.map{|vid| vid.quizzes.map {|quiz| quiz.current_attempt(current_user)}}
 
-    @props = {videos: @videos}
+    @props = {videos: @videos, currentAttempt: @current_attempt}
   end
 
   # GET /videos/1

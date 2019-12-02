@@ -9,12 +9,24 @@ if User.all.empty?
   end
 end
 
+if Rails.env.development?
+  # Answer.destroy_all
+  # CertificateAttempt.destroy_all
+  # Certificate.destroy_all
+  # QuestionAnswer.destroy_all
+  # Question.destroy_all
+  # QuizAttempt.destroy_all
+  # Quiz.destroy_all
+  # Tag.destroy_all
+  # Video.destroy_all
+end
+
 5.times do
   Tag.create(
     name: Faker::Lorem.sentence(word_count: (1..2).to_a.sample)
   )
 end
-10.times do
+20.times do
   video = Video.create(
     title: Faker::Lorem.sentence(word_count: 10),
     overview: Faker::Lorem.paragraph(sentence_count: 5),
@@ -26,7 +38,7 @@ end
     video: video,
     status: 'published'
   )
-  (3..6).to_a.sample.times do |i|
+  (10..15).to_a.sample.times do |i|
     question_type = ['multiple_choice', 'true_false'].sample
     question = Question.create(
       quiz: quiz,
@@ -35,7 +47,7 @@ end
       body: Faker::Hipster.paragraph(sentence_count: (2..8).to_a.sample),
     )
     if question_type == 'multiple_choice'
-      (3..5).to_a.sample.times do
+      (3..10).to_a.sample.times do
         Answer.create(
           body: Faker::Hipster.paragraph(sentence_count: (1..4).to_a.sample),
           question: question

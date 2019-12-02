@@ -1,0 +1,24 @@
+.valign-wrapper
+  .container
+    .row
+      .col.card.s12.m8.offset-m2.blue-grey-text.text-darken-2
+        .card-content.center
+          - if @certificate_attempt.complete
+            - if @certificate_attempt.status == 'passed'
+              %h3 Congratulations!! You passed!
+            - else
+              %h3 Take another swing at it!
+              .button-container{style: 'text-align: center; margin: 2rem 0'}
+                %a.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{href: '/attempts/new', method: 'post'} Try again
+
+            %h4= "#{(@certificate_attempt.result * 100).round(1)}%"
+            %p
+              You answered
+              %b=@certificate_attempt.correct_answers_count
+              out of
+              %b=@certificate_attempt.question_answers.count
+              questions correctly.
+          - else
+            %p This attempt is still in progress. Please finish the rest of the quizzes.
+            .button-container{style: 'text-align: center; margin: 2rem 0'}
+              %a.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{href: '/videos'} Continue

@@ -5,6 +5,7 @@
     %title Eduvids
     %meta{name: "viewport", content: "width=max-device-width,initial-scale=1.0,user-scalable=no"}
     %meta{name: "HandheldFriendly", content: "true"}
+    -# %meta{:content => "no-cache", :name => "turbolinks-cache-control"}/
 
     = csrf_meta_tags
     = csp_meta_tag
@@ -13,10 +14,11 @@
     = javascript_pack_tag 'application'
 
   %body.blue-grey.lighten-5
+
     = render 'layouts/header'
     = react_component 'Snacks', {messages: flash.collect {|name, msg| msg}, variant: 'info'}, prerender: false
 
-    -if devise_controller?
+    - if devise_controller?
       .valign-wrapper
         .container
           .row
@@ -31,9 +33,5 @@
     - else
       = yield
 
-  -# %script{type: "text/javascript", "data-turbolinks-eval" => "always"}
-  -#   :plain
-  -#     console.log(document.querySelector('#slide-out'))
-  -#     document.addEventListener('page:load', function() {
-  -#      elem = document.querySelector('#slide-out');
-  -#     });
+    // :javascript
+    //   const $mainLoader = $('#main-loader');
