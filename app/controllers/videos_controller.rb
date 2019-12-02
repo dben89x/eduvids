@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    redirect_to '/results' if current_attempt.complete
+    return redirect_to '/results' if current_attempt&.complete
     @full = true
     @videos = authorize Video.all
     @current_attempt = current_user.quiz_attempts.completed.last
