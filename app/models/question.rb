@@ -19,10 +19,19 @@ class Question < ApplicationRecord
   has_many :answers, dependent: :destroy
   enum question_type: %i[multiple_choice true_false]
 
+  before_create :assign_tf_answers
+
   def random_answers
     answers.shuffle.first(5).as_json(
       only: %i[id body]
     )
+  end
+
+  def assign_tf_answers
+    if question_type == 'true_false' && answers.empty?
+      answers.create(body: 'true')
+      answers.create(body: 'false')
+    end
   end
 
 end
