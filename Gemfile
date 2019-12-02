@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.1'
+gem 'rails', '~> 6.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1', '< 2.0'
 # Use Puma as the app server
@@ -73,7 +73,7 @@ gem "gibbon", "~> 3.3"
 
 gem "carrierwave", "~> 2.0"
 
-gem "faker", "~> 2.7"
+gem "faker", "~> 2.8"
 
 gem "figaro", "~> 1.1"
 
@@ -89,11 +89,13 @@ gem "haml", "~> 5.1", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 5.1", :groups => [:development, :test]
 
+gem 'rails_12factor', groups: [:staging, :production]
+
 gem "react-rails", "~> 2.6"
 
 gem "optimist", "~> 3.0"
 
-gem "stripe", "~> 5.10"
+gem "stripe", "~> 5.11"
 
 gem "materialize-sass", "~> 1.0"
 
