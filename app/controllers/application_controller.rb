@@ -15,7 +15,8 @@ class ApplicationController < ActionController::Base
       flash[:alert] = "Please log in"
       redirect_path = new_user_session_path
     end
-    redirect_to(request.referer || redirect_path)
+    redirect_to(redirect_path)
+    # redirect_to(request.referer || redirect_path)
     # raise ActionController::RoutingError, 'Not Found'
   end
 
