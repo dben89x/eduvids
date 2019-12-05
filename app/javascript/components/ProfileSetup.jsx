@@ -4,9 +4,9 @@ import axios from 'axios'
 
 class ProfileSetup extends React.Component {
   state = {
-    selectedSports: this.props.selectedSports,
+    selectedSports: this.props.selectedSports || [],
     ageLevel: this.props.ageLevel,
-    selectedGenders: this.props.selectedGenders,
+    selectedGenders: this.props.selectedGenders || [],
     yearsExperience: this.props.yearsExperience,
     previousTraining: this.props.previousTraining,
   }
