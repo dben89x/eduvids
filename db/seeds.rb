@@ -1,6 +1,9 @@
 require_relative '../lib/seed_helpers/seed_helper.rb'
 include SeedHelper
 
+# file = File.read('./data/data.json')
+# hash = JSON.parse(file)
+
 if User.all.empty?
   if Rails.env.test? || Rails.env.development?
     UserSeeds.create_rick_and_morty_users

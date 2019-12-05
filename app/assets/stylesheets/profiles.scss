@@ -1,0 +1,15 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+input[type="checkbox"].filled-in:checked + span:not(.lever):after
+{
+  border: 2px solid #607d8b;
+  background-color: #607d8b;
+}
+.card .card-content p {
+  line-height: 2;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #607d8b !important;
+}

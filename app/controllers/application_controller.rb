@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :null_session
   before_action :set_last_page, unless: :devise_controller?
+  before_action :ensure_profile_complete
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   rescue_from Pundit::NotDefinedError, with: :not_found
@@ -15,7 +16,8 @@ class ApplicationController < ActionController::Base
       flash[:alert] = "Please log in"
       redirect_path = new_user_session_path
     end
-    redirect_to(request.referer || redirect_path)
+    redirect_to(redirect_path)
+    # redirect_to(request.referer || redirect_path)
     # raise ActionController::RoutingError, 'Not Found'
   end
 
@@ -27,7 +29,7 @@ class ApplicationController < ActionController::Base
       flash[:alert] = "Please log in"
       redirect_path = new_user_session_path
     end
-    redirect_to(request.referer || redirect_path)
+    redirect_to(redirect_path)
   end
 
   def set_last_page
@@ -36,6 +38,15 @@ class ApplicationController < ActionController::Base
 
   def current_attempt
     current_user&.current_attempt
+  end
+
+  def ensure_profile_complete
+    if current_user && !devise_controller? && !current_user&.profile&.complete
+      unless controller_name == 'profiles'
+        flash[:alert] = "Please finish setting up your profile."
+        redirect_to '/profile'
+      end
+    end
   end
 
 end

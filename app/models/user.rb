@@ -10,6 +10,8 @@
 #  remember_created_at    :datetime
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  first_name             :string
+#  last_name              :string
 #
 
 class User < ApplicationRecord
@@ -20,8 +22,16 @@ class User < ApplicationRecord
 
   has_many :question_answers, dependent: :destroy
   has_many :certificate_attempts, dependent: :destroy
-
   has_many :quiz_attempts, through: :certificate_attempts
+  has_one :profile
+
+  after_create :create_profile
+
+  validates_presence_of :first_name, :last_name
+
+  def create_profile
+    Profile.create(user: self)
+  end
 
   def admin?
     false
