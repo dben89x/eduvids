@@ -1,7 +1,7 @@
 .valign-wrapper
   .container
     .row
-      .col.card.s12.m8.offset-m2.blue-grey-text.text-darken-2
+      .col.card.s12.m8.offset-m2.black
         .card-content.center
           - if @certificate_attempt.complete
             - if @certificate_attempt.status == 'passed'
@@ -9,7 +9,7 @@
             - else
               %h3 Take another swing at it!
               .button-container{style: 'text-align: center; margin: 2rem 0'}
-                %a.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{href: '/attempts/new', method: 'post'} Try again
+                %a.btn.waves-effect.black.waves-light.white-text{href: '/attempts/new', method: 'post'} Try again
 
             %h4= "#{(@certificate_attempt.result * 100).round(1)}%"
             %p
@@ -21,4 +21,4 @@
           - else
             %p This attempt is still in progress. Please finish the rest of the quizzes.
             .button-container{style: 'text-align: center; margin: 2rem 0'}
-              %a.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{href: '/videos'} Continue
+              %a.btn.waves-effect.black.waves-light.white-text{href: '/videos'} Continue

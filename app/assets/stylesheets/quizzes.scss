@@ -2,12 +2,12 @@
   margin: 2rem 0px 6rem;
 
   hgroup {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:after {
-    background-color: lighten(#263238, 10%);
+    background-color: (#164E7E);
   }
   input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:before, input[type=radio].with-gap:checked + span:after {
-    border-color: lighten(#263238, 10%);
+    border-color: (#164E7E);
   }
 }

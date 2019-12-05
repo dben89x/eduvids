@@ -115,7 +115,7 @@ class Videos extends React.Component {
               <h4 className="header">Congratulations!</h4>
               <h6>You've completed this quiz. Time to move onto the next one.</h6>
               <div className="button-container" style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 8rem'}}>
-                <button className="waves-effect waves-light btn blue-grey darken-4" onClick={this.newQuiz}>
+                <button className="waves-effect waves-light btn black" onClick={this.newQuiz}>
                   Next Lesson
                 </button>
               </div>
@@ -132,14 +132,14 @@ class Videos extends React.Component {
                 <div key={currentQuestion.id} className="question">{currentQuestion.body}</div>
                 {currentQuestion.random_answers.map( (answer) => (
                   <p key={answer.id}>
-                    <label className='blue-grey-text darken-6'>
+                    <label className='black-text'>
                       <input className='with-gap' checked={selectedAnswer === answer.id} name={`answer_${answer.id}`} type="radio" value={`answer_${answer.id}`} onChange={e => this.setState({selectedAnswer: answer.id})}/>
                       <span>{this.capitalize(answer.body)}</span>
                     </label>
                   </p>
                 ))}
                 <div className="button-container" style={{display: 'flex', justifyContent: 'flex-end'}}>
-                  <button className="waves-effect waves-light btn blue-grey darken-4" type="submit" disabled={typeof selectedAnswer === 'undefined'}>
+                  <button className="waves-effect waves-light btn black" type="submit" disabled={typeof selectedAnswer === 'undefined'}>
                     {currentQuizAttempt.remaining_question_count > 1 ? 'Next Question' : 'Complete Quiz'}
                   </button>
                 </div>
@@ -157,7 +157,7 @@ class Videos extends React.Component {
           <div className="col s3 collection videos-wrapper nopad">
             {videos.map( video => (
               <a href="" key={video.id}
-                className={`collection-item blue-grey-text ${selectedVideo.id == video.id ? 'blue-grey lighten-4' : (video.complete ? 'blue-grey lighten-5' : '')}`}
+                className={`collection-item black-text ${selectedVideo.id == video.id ? 'grey lighten-2' : (video.complete ? 'blue-grey lighten-5' : '')}`}
                 onClick={e => this.changeVideo(e, video)}
                 >
                 {video.title}

@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Eduvids
+    %title Concussion360
     %meta{name: "viewport", content: "width=max-device-width,initial-scale=1.0,user-scalable=no"}
     %meta{name: "HandheldFriendly", content: "true"}
     -# %meta{:content => "no-cache", :name => "turbolinks-cache-control"}/
@@ -13,7 +13,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application'
 
-  %body.blue-grey.lighten-5
+  %body
 
     = render 'layouts/header'
     = react_component 'Snacks', {messages: flash.collect {|name, msg| msg}, variant: 'info'}, prerender: false
@@ -22,7 +22,7 @@
       .valign-wrapper
         .container
           .row
-            .col.card.s12.m6.offset-m3.blue-grey-text.text-darken-2
+            .col.card.s12.m6.offset-m3
               .card-content
                 = yield
 
