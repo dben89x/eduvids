@@ -2,17 +2,25 @@
   %h2.header.flow-text Sign up
   = form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
     = render "devise/shared/error_messages", resource: resource
-    .row
-      .input-field.col.s12
-        = f.email_field :email, autofocus: true, autocomplete: "email", class: 'validate'
-        = f.label :email
-    .row
-      .input-field.col.s12
-        = f.password_field :password, autocomplete: "password", class: 'validate'
-        = f.label :password
-    .row
-      .input-field.col.s12
-        = f.password_field :password_confirmation, autocomplete: "new-password", class: 'validate'
-        = f.label :password_confirmation
+
+    .input-field.col.s12
+      = f.text_field :first_name, autofocus: true, autocomplete: "given-name", class: 'validate'
+      = f.label :first_name
+
+    .input-field.col.s12
+      = f.text_field :last_name, autocomplete: "family-name", class: 'validate'
+      = f.label :last_name
+
+    .input-field.col.s12
+      = f.email_field :email, autocomplete: "email", class: 'validate'
+      = f.label :email
+
+    .input-field.col.s12
+      = f.password_field :password, autocomplete: "password", class: 'validate'
+      = f.label :password
+
+    .input-field.col.s12
+      = f.password_field :password_confirmation, autocomplete: "new-password", class: 'validate'
+      = f.label :password_confirmation
     %button.btn.waves-effect.blue-grey.darken-2.waves-light.white-text{type: 'submit'} Sign up
 = render "devise/shared/links"

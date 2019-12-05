@@ -2,7 +2,8 @@
   {
     "video": {
       "title": "video_title",
-      "url": "video_url"
+      "url": "video_url",
+      "chapter_id": "1"
     },
     "quiz": {
       "questions": [

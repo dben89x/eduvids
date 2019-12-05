@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: certificate_attempts
+#
+#  id             :bigint           not null, primary key
+#  user_id        :bigint
+#  certificate_id :bigint
+#  status         :integer          default("pending")
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
 class CertificateAttempt < ApplicationRecord
   PASS_RATIO = 0.8
 
