@@ -1,6 +1,17 @@
 [
   {
     "video": {
+      "title": "Intro: Dr. Tracey Zaslow",
+      "url": "https://cdn.jwplayer.com/players/UfaAFiaB-a7o1Fkg4.html",
+      "chapter_id": "1"
+    },
+    "quiz": {
+      "questions": [
+      ]
+    }
+  },
+  {
+    "video": {
       "title": "About a Concussion",
       "url": "https://cdn.jwplayer.com/players/bjHpEBC2-a7o1Fkg4.html",
       "chapter_id": "2"
@@ -1011,8 +1022,738 @@
     },
     "quiz": {
       "questions": [
-
+        {
+          "body": "Call 911 and don’t move an athlete if:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Unconscious"
+            },
+            {
+              "body": "Complaining of numbness, tingling or weakness"
+            },
+            {
+              "body": "Reporting severe neck pain"
+            },
+            {
+              "body": "None of the above"
+            },
+            {
+              "body": "All of the above"
+            }
           ]
+        },
+        {
+          "body": "TRUE or FALSE: After a head injury sending an athlete to the locker room alone is a good plan",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "If an athlete is suspected to have a concussion, do the following EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Monitor the athlete or assign a reliable person to stay with them"
+            },
+            {
+              "body": "Notify the parents"
+            },
+            {
+              "body": "Encourage follow-up with a medical provider"
+            },
+            {
+              "body": "Reassure they will definitely return to play in 7 days"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Supporting the Athlete Post-Concussion",
+      "url": "https://cdn.jwplayer.com/players/tS1m7EVl-a7o1Fkg4.html",
+      "chapter_id": "12"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "After a concussion, you can support your athlete by all the following EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Reassuring them the symptoms will resolve with the correct support"
+            },
+            {
+              "body": "Balance may be off in the first 7-10 days but is expected to improve"
+            },
+            {
+              "body": "Explaining that 70% of concussions resolve within 3-4 weeks"
+            },
+            {
+              "body": "Telling them they may always have some cognitive deficits"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: A head injury cannot be considered a concussion unless a person loses consciousness",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "What percent of people with concussions lose consciousness?",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "3%"
+            },
+            {
+              "body": "27%"
+            },
+            {
+              "body": "53%"
+            },
+            {
+              "body": "10%"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: Athletes who come out of play immediately when symptoms are noted after a head trauma miss less practice",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        },
+        {
+          "body": "Athletes who did not immediately report concussion symptoms after a head trauma and continued to play:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Recovered more quickly than those who came out of play right away"
+            },
+            {
+              "body": "Missed 5 more practice days than those who came out of play right away"
+            },
+            {
+              "body": "Had a more prolonged recovery time than those who came out of play right away"
+            },
+            {
+              "body": "Recovered more quickly than those who came out of play right away and missed 5 more practice days than those who came out of play right away"
+            },
+            {
+              "body": "All of the above"
+            },
+            {
+              "body": "Missed 5 more practice days than those who came out of play right away and had a more prolonged recovery time than those who came out of play right away"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: Complete rest is beneficial to making concussion recovery fastest",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: After a concussion, recovery is based on finding the balance between rest and activity that does not worsen symptoms or lead to repeat head injury",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Post Concussion: Sleep ",
+      "url": "https://cdn.jwplayer.com/players/iHpPMPyf-a7o1Fkg4.html",
+      "chapter_id": "13"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "Five keys to concussion recovery include all EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Sleep"
+            },
+            {
+              "body": "Eating a healthy diet"
+            },
+            {
+              "body": "Staying hydrated"
+            },
+            {
+              "body": "Modified screen time"
+            },
+            {
+              "body": "Complete rest"
+            }
+          ]
+        },
+        {
+          "body": "Concussion recovery is best when it involves:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Taking special medications"
+            },
+            {
+              "body": "Video games"
+            },
+            {
+              "body": "Complete isolation from all stimulation"
+            },
+            {
+              "body": "Gradual return to learn and physical activity"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: Sleep can help to facilitate recovery",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        },
+        {
+          "body": "Part of a concussion recovery play should include all of the following EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Prioritizing sleep"
+            },
+            {
+              "body": "Going to sleep early"
+            },
+            {
+              "body": "Sleeping in"
+            },
+            {
+              "body": "Napping all day and interrupting normal night time sleep"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: To facilitate concussion recovery, athletes can take naps as long as they do not interfere with nighttime sleep",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Post Concussion: Eat Well, Drink Well",
+      "url": "https://cdn.jwplayer.com/players/BOeZ2xeG-a7o1Fkg4.html",
+      "chapter_id": "14"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "TRUE or FALSE: There is no magic food or drink for concussion recovery",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        },
+        {
+          "body": "To help facilitate recovery from concussion, athletes can be encouraged to:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Choose healthy choices"
+            },
+            {
+              "body": "Stay well-hydrated"
+            },
+            {
+              "body": "Remember to eat regularly"
+            },
+            {
+              "body": "All of the above"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Post Concussion: Return to Learn",
+      "url": "https://cdn.jwplayer.com/players/5Gjtoqcw-a7o1Fkg4.html",
+      "chapter_id": "15"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "TRUE or FALSE: Staying home from school for 5 days after a concussion is recommended",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "Tips you can give to your athletes regarding school after a concussion include:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Power through the symptoms"
+            },
+            {
+              "body": "Do not expect special accommodations"
+            },
+            {
+              "body": "It’s better to just miss a lot of days of school than try to go back for partial days"
+            },
+            {
+              "body": "Don’t worry about getting behind; anxiety/stress can slow recovery"
+            }
+          ]
+        },
+        {
+          "body": "When returning to school:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Start with full days without accommodations"
+            },
+            {
+              "body": "Take all tests and complete all assignments"
+            },
+            {
+              "body": "Do all computer work and screen time activities even if it increases symptoms"
+            },
+            {
+              "body": "Begin with partial days and gradually increase"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: Strict brain rest has detrimental effects on patients",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        },
+        {
+          "body": "To facilitate return to learn:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Keep disruptions of routine to a minimum"
+            },
+            {
+              "body": "Return the recovering student to school with accommodation as soon as possible"
+            },
+            {
+              "body": "Engage the family, medical team, academic team and school athletic team in the return to school plan"
+            },
+            {
+              "body": "None of the above"
+            },
+            {
+              "body": "All of the above"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Post Concussion: Modifying Screen Time",
+      "url": "https://cdn.jwplayer.com/players/THr4FhkS-a7o1Fkg4.html",
+      "chapter_id": "16"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "After a concussion:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "There are no limits on screen time"
+            },
+            {
+              "body": "Video games are fine as long as they are done on a tv/console"
+            },
+            {
+              "body": "Computer use is unlimited"
+            },
+            {
+              "body": "Watching TV on a regular television is fine"
+            }
+          ]
+        },
+        {
+          "body": "After a suspected concussion, smart phones:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Should not be used at all until cleared"
+            },
+            {
+              "body": "Can be used for video games"
+            },
+            {
+              "body": "Should not be used at all until cleared and can be used for video games"
+            },
+            {
+              "body": "None of the above"
+            },
+            {
+              "body": "May be used in moderation to communicate with and remain socially connected"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Post Concussion: Return to play",
+      "url": "https://cdn.jwplayer.com/players/IJ4Ev9x1-a7o1Fkg4.html",
+      "chapter_id": "17"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "TRUE or FALSE: After a concussion, an athlete should undergo complete physical and cognitive rest until symptoms resolve",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "Early physical activity after a concussion is:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Safe"
+            },
+            {
+              "body": "Dangerous and may prolong recovery"
+            },
+            {
+              "body": "Better than rest alone"
+            },
+            {
+              "body": "May be implemented while athletes still have symptoms"
+            },
+            {
+              "body": "Dangerous and may prolong recovery and may be implemented while athletes still have symptoms"
+            },
+            {
+              "body": "Safe, better than rest alone, and may be implemented while athletes still have symptoms "
+            }
+          ]
+        },
+        {
+          "body": "When beginning the return to play program:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "All symptoms must be resolved"
+            },
+            {
+              "body": "Stop activity if symptoms increase"
+            },
+            {
+              "body": "Athletes may advance to the next step 24 hours after the previous if no increase or recurrence in symptoms"
+            },
+            {
+              "body": "All symptoms must be resolved and stop activity if symptoms increase"
+            },
+            {
+              "body": "Stop activity if symptoms increase and athletes may advance to the next step 24 hours after the previous if no increase or recurrence in symptoms"
+            }
+          ]
+        },
+        {
+          "body": "Non-contact activity includes all the following EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Hitting a ball from a tee"
+            },
+            {
+              "body": "Shooting a basketball"
+            },
+            {
+              "body": "Ball drills in soccer"
+            },
+            {
+              "body": "Scrimmaging"
+            }
+          ]
+        },
+        {
+          "body": "All of the following can be done as part of non-contact training EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Throwing pitches in baseball"
+            },
+            {
+              "body": "Swimming in a pool"
+            },
+            {
+              "body": "Strength training"
+            },
+            {
+              "body": "Playing goalie in soccer"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: During the gradual return to play program, activities that increase the heart rate are prohibited",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "Before participation in contact practice, athletes must:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Be tolerating full school"
+            },
+            {
+              "body": "Be symptom-free"
+            },
+            {
+              "body": "Able to perform all non-contact activity without recurrence of symptoms"
+            },
+            {
+              "body": "Cleared by a physician trained in concussion-management"
+            },
+            {
+              "body": "All of the above"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: Before participating in a game, athletes must complete a contact practice without symptoms",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "video": {
+      "title": "Concussion: Role of Imaging",
+      "url": "https://cdn.jwplayer.com/players/dt3aheb6-a7o1Fkg4.html",
+      "chapter_id": "18"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "body": "TRUE or FALSE: CT and MRI studies should be done for all athletes after a concussion",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "True"
+            },
+            {
+              "body": "False"
+            }
+          ]
+        },
+        {
+          "body": "CT scans are recommended:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "For all patients with suspected concussions"
+            },
+            {
+              "body": "Never; radiation exposure is too high"
+            },
+            {
+              "body": "If athletes go to the Emergency Department"
+            },
+            {
+              "body": "If athletes demonstrate multiple episodes of vomiting, severe, worsening headache and/or other symptoms that could indicate bleeding or fracture"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: CT and MRI are expected to be normal in an isolated concussion",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            }
+          ]
+        },
+        {
+          "body": "Head CTs are considered to evaluate for all the following EXCEPT:",
+          "question_type": "multiple_choice",
+          "answers": [
+            {
+              "body": "Intracranial bleed"
+            },
+            {
+              "body": "Cerebral edema (brain swelling)"
+            },
+            {
+              "body": "Skull fracture"
+            },
+            {
+              "body": "Concussion"
+            }
+          ]
+        },
+        {
+          "body": "TRUE or FALSE: MRIs are usually done if concussion symptoms persist more than 3-4 weeks to evaluate for an underlying issue",
+          "question_type": "true_false",
+          "answers": [
+            {
+              "body": "False"
+            },
+            {
+              "body": "True"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "video": {
+        "title": "Review: Return to Play Criteria",
+        "url": "https://cdn.jwplayer.com/players/hGDwOwVl-a7o1Fkg4.html",
+        "chapter_id": "19"
+      },
+      "quiz": {
+        "questions": [
+        ]
+      }
+    },
+    {
+      "video": {
+        "title": "Long-term Concerns",
+        "url": "https://cdn.jwplayer.com/players/RHtWJrXJ-a7o1Fkg4.html",
+        "chapter_id": "20"
+      },
+      "quiz": {
+        "questions": [
+        ]
+      }
+    },
+    {
+      "video": {
+        "title": "Tips for Preventing Concussions",
+        "url": "https://cdn.jwplayer.com/players/dhK8a7uX-a7o1Fkg4.html",
+        "chapter_id": "21"
+      },
+      "quiz": {
+        "questions": [
+        ]
+      }
+    },
+    {
+      "video": {
+        "title": "Tips for Preventing Concussions: Soccer-related/Headgear/Mouthguards",
+        "url": "https://cdn.jwplayer.com/players/sFXso98U-a7o1Fkg4.html",
+        "chapter_id": "22"
+      },
+      "quiz": {
+        "questions": [
+        ]
+      }
+    },
+    {
+      "video": {
+        "title": "Concussion Training: Recap",
+        "url": "https://cdn.jwplayer.com/players/WqVDzJiJ-a7o1Fkg4.html",
+        "chapter_id": "23"
+      },
+      "quiz": {
+        "questions": [
+        ]
         }
       ]
     }
