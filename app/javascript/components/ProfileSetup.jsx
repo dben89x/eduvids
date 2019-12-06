@@ -107,7 +107,7 @@ class ProfileSetup extends React.Component {
               </div>
             </div>
 
-            <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            {/* <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">How many years have you been coaching?</h6>
                 <div className="card-content">
@@ -123,7 +123,7 @@ class ProfileSetup extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
               <div className="card-content">
