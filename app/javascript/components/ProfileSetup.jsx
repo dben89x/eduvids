@@ -146,7 +146,6 @@ class ProfileSetup extends React.Component {
             </div>
 
             <div className="btn-container col s12 m6 offset-m3 blue-grey-text text-darken-2" style={{padding: 0}}>
-
               <button type="submit" className="waves-effect blue-grey waves-light btn-large" style={{width: '100%'}}>Save information</button>
             </div>
           </form>

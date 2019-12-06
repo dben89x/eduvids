@@ -8,14 +8,29 @@ class VideosController < ApplicationController
     @full = true
     @videos = authorize Video.all
     @current_attempt = current_user.quiz_attempts.completed.last
-    @videos = @videos.map do |video|
-      video.as_json(only: %i[id url title description]).merge(
-        complete: current_attempt.quiz_attempts.complete.where(quiz: video.quiz).any?
+    @chapters = Chapter.all
+    # @chapters = @chapters.map do |chapter|
+    #   {
+    #     id: chapter.id,
+    #     videos: chapter.videos.map { |video|
+    #       video.as_json(only: %i[id url title description chapter_id]).merge(
+    #         complete: current_attempt.quiz_attempts.complete.where(quiz: video.quiz).any?,
+    #         type: 'video'
+    #       )
+    #     },
+    #     quiz: chapter.videos.map { |video| video.questions.as_json(only: %i[id ]) }.flatten
+    #   }
+    # end
+
+    @videos = @videos.map { |video|
+      video.as_json(only: %i[id url title description chapter_id]).merge(
+        complete: current_attempt.quiz_attempts.complete.where(quiz: video.quiz).any?,
+        type: 'video'
       )
-    end
+    }
     # @videos = @videos.map{|vid| vid.quizzes.map {|quiz| quiz.current_attempt(current_user)}}
 
-    @props = {videos: @videos, currentAttempt: @current_attempt}
+    @props = {videos: @videos, currentAttempt: @current_attempt, chapters: @chapters}
   end
 
   # GET /videos/1

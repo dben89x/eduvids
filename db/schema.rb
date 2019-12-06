@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_05_084623) do
+ActiveRecord::Schema.define(version: 2019_12_06_104316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,11 @@ ActiveRecord::Schema.define(version: 2019_12_05_084623) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_certificates_on_user_id"
+  end
+
+  create_table "chapters", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -122,6 +127,8 @@ ActiveRecord::Schema.define(version: 2019_12_05_084623) do
     t.string "title"
     t.text "description"
     t.string "overview"
+    t.bigint "chapter_id"
+    t.index ["chapter_id"], name: "index_videos_on_chapter_id"
   end
 
 end

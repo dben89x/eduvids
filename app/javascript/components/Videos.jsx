@@ -15,6 +15,7 @@ class Videos extends React.Component {
       selectedAnswer: undefined,
       isLoading: false,
       currentQuizComplete: false,
+      completedVideos: []
     }
   }
 
@@ -57,9 +58,10 @@ class Videos extends React.Component {
   }
 
   changeVideo = (e, selectedVideo) => {
-    console.log(selectedVideo)
+    var {completedVideos} = this.state
+    completedVideos.push(selectedVideo.id)
     e && e.preventDefault()
-    this.setState({selectedVideo}, () => {
+    this.setState({selectedVideo, completedVideos}, () => {
       this.fetchQuiz()
     })
   }
@@ -104,8 +106,8 @@ class Videos extends React.Component {
   }
 
   render () {
-    const {videos} = this.props
-    const {selectedVideo, currentQuizAttempt, selectedAnswer, isLoading, currentQuestion} = this.state
+    const {videos, chapters} = this.props
+    const {selectedVideo, currentQuizAttempt, selectedAnswer, isLoading, currentQuestion, completedVideos} = this.state
 
     const CurrentQuizAttempt = () => {
       return (<React.Fragment>
@@ -146,7 +148,6 @@ class Videos extends React.Component {
               </form>
             ) : null}
           </React.Fragment>
-
         )}
       </React.Fragment>)
     }
@@ -157,7 +158,7 @@ class Videos extends React.Component {
           <div className="col s3 collection videos-wrapper nopad">
             {videos.map( video => (
               <a href="" key={video.id}
-                className={`collection-item black-text ${selectedVideo.id == video.id ? 'grey lighten-2' : (video.complete ? 'blue-grey lighten-5' : '')}`}
+                className={`collection-item black-text ${selectedVideo.id == video.id ? 'grey lighten-2' : ((video.complete || completedVideos.includes(video.id)) ? 'blue-grey lighten-5' : '')}`}
                 onClick={e => this.changeVideo(e, video)}
                 >
                 {video.title}
@@ -175,7 +176,6 @@ class Videos extends React.Component {
                     <CircularProgress />
                   </div>
                 ) : null}
-
                 {currentQuizAttempt ? <CurrentQuizAttempt/> : null}
               </div>
             </div>
