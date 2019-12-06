@@ -29,12 +29,13 @@
               .card-content
                 = yield
 
-    - unless @full
-      .container
-        .row
-          = yield
     - else
-      = yield
+      - unless @full
+        .container
+          .row
+            = yield
+      - else
+        = yield
 
     // :javascript
     //   const $mainLoader = $('#main-loader');

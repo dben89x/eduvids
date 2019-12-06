@@ -500,7 +500,11 @@
     "video": {
       "title": "Category 1: Physical",
       "url": "https://cdn.jwplayer.com/players/LkA34Vf7-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "2"
+=======
       "chapter_id": "1"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -584,7 +588,11 @@
     "video": {
       "title": "Category 2: Cognitive",
       "url": "https://cdn.jwplayer.com/players/7KwgtWkk-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "2"
+=======
       "chapter_id": "1"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -665,7 +673,11 @@
     "video": {
       "title": "Category 3: Emotional",
       "url": "https://cdn.jwplayer.com/players/W3wE4aUv-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "2"
+=======
       "chapter_id": "1"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -726,7 +738,11 @@
     "video": {
       "title": "Category 4: Sleep",
       "url": "https://cdn.jwplayer.com/players/nSswk1PD-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "2"
+=======
       "chapter_id": "1"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -767,7 +783,7 @@
     "video": {
       "title": "Define Concussion Recap",
       "url": "https://cdn.jwplayer.com/players/HSmckIlX-a7o1Fkg4.html",
-      "chapter_id": "8"
+      "chapter_id": "2"
     },
     "quiz": {
       "questions": []
@@ -777,7 +793,7 @@
     "video": {
       "title": "What to Do? Primary Care Protocol",
       "url": "https://cdn.jwplayer.com/players/SqANymGS-a7o1Fkg4.html",
-      "chapter_id": "9"
+      "chapter_id": "3"
     },
     "quiz": {
       "questions": [{
@@ -841,7 +857,11 @@
     "video": {
       "title": "What to Do? Emergency Care Protocol",
       "url": "https://cdn.jwplayer.com/players/wNxU12FZ-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "3"
+=======
       "chapter_id": "2"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -953,7 +973,11 @@
     "video": {
       "title": "What to Do? Dos and Don'ts",
       "url": "https://cdn.jwplayer.com/players/hjCaSEva-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "3"
+=======
       "chapter_id": "2"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1122,7 +1146,11 @@
     "video": {
       "title": "Post Concussion: Sleep ",
       "url": "https://cdn.jwplayer.com/players/iHpPMPyf-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "3"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1208,7 +1236,11 @@
     "video": {
       "title": "Post Concussion: Eat Well, Drink Well",
       "url": "https://cdn.jwplayer.com/players/BOeZ2xeG-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "3"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1246,7 +1278,11 @@
     "video": {
       "title": "Post Concussion: Return to Learn",
       "url": "https://cdn.jwplayer.com/players/5Gjtoqcw-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "3"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1332,7 +1368,11 @@
     "video": {
       "title": "Post Concussion: Modifying Screen Time",
       "url": "https://cdn.jwplayer.com/players/THr4FhkS-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "3"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1379,7 +1419,11 @@
     "video": {
       "title": "Post Concussion: Return to Play",
       "url": "https://cdn.jwplayer.com/players/IJ4Ev9x1-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "3"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": [{
@@ -1596,7 +1640,11 @@
     "video": {
       "title": "Review: Return to Play Criteria",
       "url": "https://cdn.jwplayer.com/players/hGDwOwVl-a7o1Fkg4.html",
+<<<<<<< HEAD
+      "chapter_id": "4"
+=======
       "chapter_id": "5"
+>>>>>>> a04032300d495527383f6981d8c69152bfb1ce74
     },
     "quiz": {
       "questions": []
