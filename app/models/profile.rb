@@ -22,7 +22,7 @@ class Profile < ApplicationRecord
     sports.presence &&
     age_level.presence &&
     genders.presence &&
-    years_experience.presence &&
+    # years_experience.presence &&
     previous_training.presence
   end
 end

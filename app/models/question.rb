@@ -19,7 +19,7 @@ class Question < ApplicationRecord
   has_many :answers, dependent: :destroy
   enum question_type: %i[multiple_choice true_false]
 
-  before_create :assign_tf_answers
+  # before_create :assign_tf_answers
 
   def random_answers
     answers.shuffle.first(5).as_json(

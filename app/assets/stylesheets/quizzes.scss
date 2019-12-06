@@ -5,9 +5,9 @@
     margin: 1rem 0;
   }
   input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:after {
-    background-color: (#164E7E);
+    background-color: #164E7E;
   }
   input[type=radio]:checked + span:after, input[type=radio].with-gap:checked + span:before, input[type=radio].with-gap:checked + span:after {
-    border-color: (#164E7E);
+    border-color: #164E7E;
   }
 }

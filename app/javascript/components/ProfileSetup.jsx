@@ -7,7 +7,7 @@ class ProfileSetup extends React.Component {
     selectedSports: this.props.selectedSports || [],
     ageLevel: this.props.ageLevel,
     selectedGenders: this.props.selectedGenders || [],
-    yearsExperience: this.props.yearsExperience,
+    yearsExperience: this.props.yearsExperience || '',
     previousTraining: this.props.previousTraining,
   }
 
@@ -113,9 +113,9 @@ class ProfileSetup extends React.Component {
                 <div className="card-content">
                   <div className="input-field">
                     <select className="blue-grey-text" onChange={e => this.setState({yearsExperience: e.target.value})} value={yearsExperience}>
-                      <option value="" >Choose your option</option>
+                      <option className="blue-grey-text" value="" >Choose your option</option>
                       <option className="blue-grey-text" value={0}>Under 1 Year</option>
-                      <option value={1}>1 Year</option>
+                      <option className="blue-grey-text" value={1}>1 Year</option>
                       {Array(49).fill('').map( (e, i) => (
                         <option key={`${e}${i}`} value={i+2}>{`${i+2} Years`}</option>
                       ))}

@@ -7,16 +7,6 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def after_sign_up_path_for(resource)
-    if resource.is_artist
-      path_maker('/artists/signup/logo')
-    else
-      if cookies[:last_page].present?
-        go_to_place = cookies[:last_page]
-        cookies.delete(:last_page)
-        go_to_place
-      else
-        root_path
-      end
-    end
+    resource.profile&.complete ? '/checkout' : '/profile'
   end
 end
