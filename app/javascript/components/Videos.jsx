@@ -124,30 +124,32 @@ class Videos extends React.Component {
             </hgroup>
           </React.Fragment>
         ) : (
-          <React.Fragment>
-            <hgroup className="header">
-              <h4 className="header">Quiz</h4>
-              <h6>{currentQuizAttempt.question_tracker}</h6>
-            </hgroup>
-            {currentQuestion ? (
-              <form onSubmit={e => this.submitAnswer(e)}>
-                <div key={currentQuestion.id} className="question">{currentQuestion.body}</div>
-                {currentQuestion.random_answers.map( (answer) => (
-                  <p key={answer.id}>
-                    <label className='black-text'>
-                      <input className='with-gap' checked={selectedAnswer === answer.id} name={`answer_${answer.id}`} type="radio" value={`answer_${answer.id}`} onChange={e => this.setState({selectedAnswer: answer.id})}/>
-                      <span>{this.capitalize(answer.body)}</span>
-                    </label>
-                  </p>
-                ))}
-                <div className="button-container" style={{display: 'flex', justifyContent: 'flex-end'}}>
-                  <button className="waves-effect waves-light btn black" type="submit" disabled={typeof selectedAnswer === 'undefined'}>
-                    {currentQuizAttempt.remaining_question_count > 1 ? 'Next Question' : 'Complete Quiz'}
-                  </button>
-                </div>
-              </form>
-            ) : null}
-          </React.Fragment>
+          currentQuizAttempt && currentQuizAttempt.questions.length > 0 ? (
+            <React.Fragment>
+              <hgroup className="header">
+                <h4 className="header">Quiz</h4>
+                <h6>{currentQuizAttempt.question_tracker}</h6>
+              </hgroup>
+              {currentQuestion ? (
+                <form onSubmit={e => this.submitAnswer(e)}>
+                  <div key={currentQuestion.id} className="question">{currentQuestion.body}</div>
+                  {currentQuestion.random_answers.map( (answer) => (
+                    <p key={answer.id}>
+                      <label className='black-text'>
+                        <input className='with-gap' checked={selectedAnswer === answer.id} name={`answer_${answer.id}`} type="radio" value={`answer_${answer.id}`} onChange={e => this.setState({selectedAnswer: answer.id})}/>
+                        <span>{this.capitalize(answer.body)}</span>
+                      </label>
+                    </p>
+                  ))}
+                  <div className="button-container" style={{display: 'flex', justifyContent: 'flex-end'}}>
+                    <button className="waves-effect waves-light btn black" type="submit" disabled={typeof selectedAnswer === 'undefined'}>
+                      {currentQuizAttempt.remaining_question_count > 1 ? 'Next Question' : 'Complete Quiz'}
+                    </button>
+                  </div>
+                </form>
+              ) : null}
+            </React.Fragment>
+          ) : null
         )}
       </React.Fragment>)
     }
