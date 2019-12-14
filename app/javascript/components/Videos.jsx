@@ -29,10 +29,12 @@ class Videos extends React.Component {
       }
     }).then( response => {
       this.handleQAResponse(response)
+      this.setState({isLoading: false})
     }).catch( e => {
       console.log(e)
-    }).finally( () => {
       this.setState({isLoading: false})
+    // }).finally( () => {
+    //   this.setState({isLoading: false})
     })
   }
 
@@ -83,10 +85,12 @@ class Videos extends React.Component {
       }
     }).then( response => {
       this.handleQAResponse(response)
+      this.setState({isLoading: false})
     }).catch( e => {
       console.log(e)
-    }).finally( () => {
       this.setState({isLoading: false})
+    // }).finally( () => {
+    //   this.setState({isLoading: false})
     })
   }
 
@@ -124,7 +128,7 @@ class Videos extends React.Component {
             </hgroup>
           </React.Fragment>
         ) : (
-          currentQuizAttempt && currentQuizAttempt.questions && currentQuizAttempt.questions.length  > 0 ? (
+          currentQuestion && currentQuestion.id ? (
             <React.Fragment>
               <hgroup className="header">
                 <h4 className="header">Quiz</h4>
