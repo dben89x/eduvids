@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-
+    @full = true
   end
 
   def checkout
