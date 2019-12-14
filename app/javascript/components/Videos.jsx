@@ -124,7 +124,7 @@ class Videos extends React.Component {
             </hgroup>
           </React.Fragment>
         ) : (
-          currentQuizAttempt && currentQuizAttempt.questions.length > 0 ? (
+          currentQuizAttempt && currentQuizAttempt.questions && currentQuizAttempt.questions.length  > 0 ? (
             <React.Fragment>
               <hgroup className="header">
                 <h4 className="header">Quiz</h4>
