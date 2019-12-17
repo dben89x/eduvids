@@ -106,7 +106,7 @@ class Videos extends React.Component {
   }
 
   render () {
-    const {videos, chapters} = this.props
+    const {videos} = this.props
     const {selectedVideo, currentQuizAttempt, selectedAnswer, isLoading, currentQuestion, completedVideos} = this.state
 
     const CurrentQuizAttempt = () => {

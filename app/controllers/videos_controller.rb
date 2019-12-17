@@ -8,7 +8,7 @@ class VideosController < ApplicationController
     @full = true
     @videos = authorize Video.all
     @current_attempt = current_user.quiz_attempts.completed.last
-    @chapters = Chapter.all
+    # @chapters = Chapter.all
     # @chapters = @chapters.map do |chapter|
     #   {
     #     id: chapter.id,
@@ -30,7 +30,7 @@ class VideosController < ApplicationController
     }
     # @videos = @videos.map{|vid| vid.quizzes.map {|quiz| quiz.current_attempt(current_user)}}
 
-    @props = {videos: @videos, currentAttempt: @current_attempt, chapters: @chapters}
+    @props = {videos: @videos, currentAttempt: @current_attempt}
   end
 
   # GET /videos/1

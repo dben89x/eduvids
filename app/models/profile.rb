@@ -23,6 +23,6 @@ class Profile < ApplicationRecord
     age_level.presence &&
     genders.presence &&
     # years_experience.presence &&
-    previous_training.presence
+    !previous_training.nil?
   end
 end
