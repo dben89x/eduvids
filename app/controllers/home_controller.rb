@@ -1,9 +1,10 @@
 class HomeController < ApplicationController
   def index
-
+    @full = true
   end
 
   def checkout
+
 
     # session = Stripe::Checkout::Session.create(
     #   payment_method_types: ['card'],
