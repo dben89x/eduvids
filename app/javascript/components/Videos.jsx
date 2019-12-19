@@ -158,7 +158,7 @@ class Videos extends React.Component {
           <div className="col s3 collection videos-wrapper nopad">
             {videos.map( video => (
               <a href="" key={video.id}
-                className={`collection-item black-text ${selectedVideo.id == video.id ? 'grey lighten-2' : ((video.complete || completedVideos.includes(video.id)) ? 'blue-grey lighten-5' : '')}`}
+                className={`collection-item black-text ${selectedVideo.id == video.id ? 'grey lighten-2' : ((video.complete || completedVideos.includes(video.id)) ? 'black lighten-5' : '')}`}
                 onClick={e => this.changeVideo(e, video)}
                 >
                 {video.title}

@@ -59,14 +59,14 @@ class ProfileSetup extends React.Component {
 
           <h2 className="header flow-text">Profile Setup</h2>
           <form action="" onSubmit={this.onSubmit} style={{textAlign: 'left', display: 'flex', flexDirection: 'column'}}>
-            <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            <div className="col card s12 m6 offset-m3 black-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">Which sports do you coach?</h6>
                 <div className="card-content">
                   {sports.map( sport => (
                     <p key={sport}>
                       <label>
-                        <input type="checkbox" className="filled-in blue-grey" checked={selectedSports.includes(sport)} onChange={e => this.changeMultiple('selectedSports', sport)} />
+                        <input type="checkbox" className="filled-in black" checked={selectedSports.includes(sport)} onChange={e => this.changeMultiple('selectedSports', sport)} />
                         <span>{sport}</span>
                       </label>
                     </p>
@@ -75,14 +75,14 @@ class ProfileSetup extends React.Component {
               </div>
             </div>
 
-            <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            <div className="col card s12 m6 offset-m3 black-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">Which age level do you coach?</h6>
                 <div className="card-content">
                   {ages.map( age => (
                     <p key={age.value}>
                       <label>
-                        <input type="checkbox" className="filled-in blue-grey" checked={ageLevel === age.value} onChange={e => this.setState({ageLevel: age.value})} />
+                        <input type="checkbox" className="filled-in black" checked={ageLevel === age.value} onChange={e => this.setState({ageLevel: age.value})} />
                         <span>{age.label}</span>
                       </label>
                     </p>
@@ -91,14 +91,14 @@ class ProfileSetup extends React.Component {
               </div>
             </div>
 
-            <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            <div className="col card s12 m6 offset-m3 black-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">Which gender(s) do you coach?</h6>
                 <div className="card-content">
                   {genders.map( gender => (
                     <p key={gender}>
                       <label>
-                        <input type="checkbox" className="filled-in blue-grey" checked={selectedGenders.includes(gender)} onChange={e => this.changeMultiple('selectedGenders', gender)} />
+                        <input type="checkbox" className="filled-in black" checked={selectedGenders.includes(gender)} onChange={e => this.changeMultiple('selectedGenders', gender)} />
                         <span>{gender}</span>
                       </label>
                     </p>
@@ -107,15 +107,15 @@ class ProfileSetup extends React.Component {
               </div>
             </div>
 
-            {/* <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            {/* <div className="col card s12 m6 offset-m3 black-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">How many years have you been coaching?</h6>
                 <div className="card-content">
                   <div className="input-field">
-                    <select className="blue-grey-text" onChange={e => this.setState({yearsExperience: e.target.value})} value={yearsExperience}>
-                      <option className="blue-grey-text" value="" >Choose your option</option>
-                      <option className="blue-grey-text" value={0}>Under 1 Year</option>
-                      <option className="blue-grey-text" value={1}>1 Year</option>
+                    <select className="black-text" onChange={e => this.setState({yearsExperience: e.target.value})} value={yearsExperience}>
+                      <option className="black-text" value="" >Choose your option</option>
+                      <option className="black-text" value={0}>Under 1 Year</option>
+                      <option className="black-text" value={1}>1 Year</option>
                       {Array(49).fill('').map( (e, i) => (
                         <option key={`${e}${i}`} value={i+2}>{`${i+2} Years`}</option>
                       ))}
@@ -125,19 +125,19 @@ class ProfileSetup extends React.Component {
               </div>
             </div> */}
 
-            <div className="col card s12 m6 offset-m3 blue-grey-text text-darken-2">
+            <div className="col card s12 m6 offset-m3 black-text text-darken-2">
               <div className="card-content">
                 <h6 className="header flow-text">Have you had any previous Concussion Training?</h6>
                 <div className="card-content">
                   <p>
                     <label>
-                      <input type="checkbox" className="filled-in blue-grey" checked={previousTraining == true} onChange={e => this.setState({previousTraining: true})} />
+                      <input type="checkbox" className="filled-in black" checked={previousTraining == true} onChange={e => this.setState({previousTraining: true})} />
                       <span>Yes</span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input type="checkbox" className="filled-in blue-grey" checked={previousTraining == false} onChange={e => this.setState({previousTraining: false})} />
+                      <input type="checkbox" className="filled-in black" checked={previousTraining == false} onChange={e => this.setState({previousTraining: false})} />
                       <span>No</span>
                     </label>
                   </p>
@@ -145,8 +145,8 @@ class ProfileSetup extends React.Component {
               </div>
             </div>
 
-            <div className="btn-container col s12 m6 offset-m3 blue-grey-text text-darken-2" style={{padding: 0}}>
-              <button type="submit" className="waves-effect blue-grey waves-light btn-large" style={{width: '100%'}}>Save information</button>
+            <div className="btn-container col s12 m6 offset-m3 black-text text-darken-2" style={{padding: 0}}>
+              <button type="submit" className="waves-effect black white-text waves-light btn-large" style={{width: '100%'}}>Save information</button>
             </div>
           </form>
         </div>

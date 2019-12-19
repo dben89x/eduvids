@@ -5,7 +5,9 @@
 .nav-wrapper {
   padding: 0 2rem;
   background-color: #164E7E;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
 #error_explanation {
   color: red;
 }
@@ -55,7 +57,7 @@ input[type=radio] {
 
 .powered {
   font-size: 12px;
-  color: #000;
+  color: #fff;
   margin-top: 20px;
 }
 
@@ -64,12 +66,13 @@ input[type=radio] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000111;
-  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
   text-align: center;
   letter-spacing: -1px;
   line-height: .95;
-  width: 70%;}
+  font-size: 42px;
+  width: 60%;}
 
 .bottom-footer {
   background-color: #dedede;
@@ -99,6 +102,6 @@ input[type=radio] {
 }
 
 .btn {
-  background-color: #F5AF33;
+  background-color: #fff;
   color: white;
 }
