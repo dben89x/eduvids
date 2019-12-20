@@ -1,11 +1,12 @@
 .valign-wrapper
   .container
     .row
-      .col.card.s12.m8.offset-m2.black
+      .col.card.s12.m8.offset-m2
         .card-content.center
           - if @certificate_attempt.complete
             - if @certificate_attempt.status == 'passed'
               %h3 Congratulations!! You passed!
+              = link_to 'Download Certificate', asset_path('YSPN Concussion Certificate.pdf'), download: 'YSPN Concussion Certificate', class: ' btn waves-effect black waves-light white-text'
             - else
               %h3 Take another swing at it!
               .button-container{style: 'text-align: center; margin: 2rem 0'}
