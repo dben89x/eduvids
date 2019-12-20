@@ -5,6 +5,10 @@ class VideosController < ApplicationController
   # GET /videos.json
   def index
     return redirect_to '/results' if current_attempt&.complete
+    if params[:success] == 'true'
+      current_user.update_attribute('purchased', true) unless current_user&.purchased
+    end
+    return redirect_to user_root_path if !current_user&.purchased
     @full = true
     @videos = authorize Video.all
     @current_attempt = current_user.quiz_attempts.completed.last

@@ -49,4 +49,22 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def redirect_to_user_root
+    redirect_to user_root_path if current_user
+  end
+
+  def user_root_path
+    if current_user&.purchased
+      '/videos'
+    elsif !current_user&.profile&.complete
+      flash[:alert] = "Please finish setting up your profile."
+      '/profile' unless controller_name == 'profiles' && action_name == 'edit'
+    elsif current_user&.profile&.complete
+      flash[:alert] = "Please finish checking out."
+      '/checkout' unless controller_name == 'home' && action_name == 'checkout'
+    else
+      root_path
+    end
+  end
+
 end
