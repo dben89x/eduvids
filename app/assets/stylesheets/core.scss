@@ -1,6 +1,9 @@
+body {
+  background-color: #dedede;
+}
 .valign-wrapper {
   min-height: calc(100vh - 64px);
-  // background-color: #dedede;
+  background-color: #dedede;
 }
 .nav-wrapper {
   padding: 0 2rem;
@@ -24,6 +27,7 @@ nav .sidenav-trigger {
 .videos-wrapper, .video-wrapper {
   height: calc(100vh - 64px) !important;
   overflow: scroll !important;
+  background: white;
 }
 .video-wrapper {
   padding: 1rem 5rem !important;
