@@ -92,7 +92,7 @@
           ]
         },
         {
-          "body": "Why do the number of concussions reported annually vary?",
+          "body": "Why does the number of concussions reported annually vary?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Different definitions used in different research projects"
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "body": "Athletes do not report concussion symptoms because they:",
+          "body": "Athletes do not report concussion symptoms because:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Did not think a concussion was serious enough to report"
@@ -135,7 +135,7 @@
           ]
         },
         {
-          "body": "Because athletes don’t want to let their teammates down, they:",
+          "body": "Because athletes don’t want to let their teammates down, they might:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "May not report concussion symptoms"
@@ -169,7 +169,7 @@
           ]
         },
         {
-          "body": "The most common reason athletes did not report a concussion is they:",
+          "body": "The most common reason athletes did not report a concussion is:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Did not realize a concussion was sustained"
@@ -186,7 +186,7 @@
           ]
         },
         {
-          "body": "Where do most suspected concussions seek evaluation?:",
+          "body": "Where do most suspected concussions seek evaluation?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Urgent Care"
@@ -217,7 +217,7 @@
           ]
         },
         {
-          "body": "Studies show what percentage of athletes may not report symptoms of concussion:",
+          "body": "Studies show what percentage of athletes may not report symptoms of a concussion?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "5%"
@@ -251,7 +251,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Concussion symptom reporting rates can potentially improve with athlete education and coaches creating a supportive environment",
+          "body": "TRUE or FALSE: Concussion symptom reporting rates can potentially improve with athlete education and coaches creating a supportive environment.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -322,7 +322,7 @@
           ]
         },
         {
-          "body": "An athlete comes to the sideline reporting he got his “bell rung”, as the coach:",
+          "body": "An athlete comes to the sideline reporting he got his “bell rung”, the coach should:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Put him right back in the game"
@@ -356,7 +356,7 @@
           ]
         },
         {
-          "body": "Concussion occur LEAST commonly in:",
+          "body": "Concussions occur LEAST commonly in:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Basketball"
@@ -418,7 +418,7 @@
           ]
         },
         {
-          "body": "What percentage of pediatric patients with concussion will be better in 3-4 weeks?",
+          "body": "What percentage of pediatric patients with a concussion will be better in 3-4 weeks?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "24%"
@@ -446,7 +446,7 @@
           ]
         },
         {
-          "body": "Concussions can occur in which of the following way/s?",
+          "body": "Concussions can occur in which of the following way(s)?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Head to head collision with a helmet on"
@@ -541,7 +541,7 @@
           ]
         },
         {
-          "body": "All of the following are symptoms of concussion except:",
+          "body": "All of the following are symptoms of concussions, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Reporting that the lights are too bright"
@@ -561,7 +561,7 @@
           "body": "Vomiting:",
           "question_type": "multiple_choice",
           "answers": [{
-              "body": "Can occur with concussion and more serious injuries"
+              "body": "Can occur with a concussion and more serious injuries"
             },
             {
               "body": "Always indicates bleeding in the brain"
@@ -588,7 +588,7 @@
     },
     "quiz": {
       "questions": [{
-          "body": "The following symptoms are all cognitive symptoms of concussion EXCEPT:",
+          "body": "The following symptoms are all cognitive symptoms of concussions, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Feeling foggy"
@@ -642,10 +642,10 @@
           ]
         },
         {
-          "body": "Cognitive symptoms, like difficulty concentrating:",
+          "body": "Cognitive symptoms, like difficulty concentrating, are always:",
           "question_type": "multiple_choice",
           "answers": [{
-              "body": "Are always noticed at the time of injury"
+              "body": "Noticed at the time of injury"
             },
             {
               "body": "Sometimes are not noted until athletes return to the classroom a day or two later"
@@ -654,7 +654,7 @@
               "body": "Never occur with concussions"
             },
             {
-              "body": "Always occur later that night on the day of injury"
+              "body": "Occur later that night on the day of injury"
             }
           ]
         }
@@ -781,7 +781,7 @@
     },
     "quiz": {
       "questions": [{
-          "body": "15 year-old volleyball player takes a little extra time coming up after a collision with another teammate and looks a little off balance. She staggers to the side of the court. She’s conscious but confused. You:",
+          "body": "A 15-year-old volleyball player takes a little extra time coming up after a collision with another teammate and looks a little off balance. She staggers to the side of the court. She’s conscious but confused. You:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Send to the locker room to wait for the team to finish the game"
@@ -824,7 +824,7 @@
           ]
         },
         {
-          "body": "TRUE OR FALSE: The concussion laws across the country prohibit same day return to play.",
+          "body": "TRUE OR FALSE: The concussion laws across the country prohibit same-day return to play.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -862,7 +862,7 @@
           ]
         },
         {
-          "body": "All of the following symptoms and signs would warrant referral to an Emergency Room immediately EXCEPT:",
+          "body": "All of the following symptoms and signs would warrant referral to an Emergency Room immediately, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Increasing confusion"
@@ -882,7 +882,7 @@
           ]
         },
         {
-          "body": "Which of the following symptoms would be reason to go to an Emergency Room immediately:",
+          "body": "Which of the following symptoms would be a reason to go to an Emergency Room immediately?",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Seizure"
@@ -908,7 +908,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: All athletes who sustain a head injury must be seen in the Emergency Room",
+          "body": "All athletes who sustain a head injury must be seen in the Emergency Room.",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -922,7 +922,7 @@
           "body": "Which of the following symptom sets would be appropriate to recommend followup with a medical provider in a few days:",
           "question_type": "multiple_choice",
           "answers": [{
-              "body": "Forgetting what happened around the time of injury, multiple episodes of vomiting and headache"
+              "body": "Feeling dazed, headache, nausea, and trouble concentrating"
             },
             {
               "body": "Sensitivity to light and sound, irritability and unable to move limbs"
@@ -977,7 +977,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: After a head injury sending an athlete to the locker room alone is a good plan",
+          "body": "After a head injury sending an athlete to the locker room alone is a good plan",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -988,7 +988,7 @@
           ]
         },
         {
-          "body": "If an athlete is suspected to have a concussion, do the following EXCEPT:",
+          "body": "Do the following protocols if an athlete is suspected of having a concussion, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Monitor the athlete or assign a reliable person to stay with them"
@@ -1015,7 +1015,7 @@
     },
     "quiz": {
       "questions": [{
-          "body": "After a concussion, you can support your athlete by all the following EXCEPT:",
+          "body": "After a concussion, you can support your athlete by doing all of the following, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Reassuring them the symptoms will resolve with the correct support"
@@ -1032,7 +1032,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: A head injury cannot be considered a concussion unless a person loses consciousness",
+          "body": "A head injury cannot be considered a concussion unless a person loses consciousness.",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -1060,7 +1060,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Athletes who come out of play immediately when symptoms are noted after a head trauma miss less practice",
+          "body": "Athletes who come out of play immediately when symptoms are noted after a head trauma miss less practice.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1071,13 +1071,13 @@
           ]
         },
         {
-          "body": "Athletes who did not immediately report concussion symptoms after a head trauma and continued to play:",
+          "body": "Athletes who did not immediately report concussion symptoms after head trauma and continued to play:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Recovered more quickly than those who came out of play right away"
             },
             {
-              "body": "Missed 5 more practice days than those who came out of play right away"
+              "body": "Missed 5 more practice days than those who came out of the game right away"
             },
             {
               "body": "Had a more prolonged recovery time than those who came out of play right away"
@@ -1094,7 +1094,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Complete rest is beneficial to making concussion recovery fastest",
+          "body": "Complete rest is beneficial to making concussion recovery fastest.",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -1105,7 +1105,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: After a concussion, recovery is based on finding the balance between rest and activity that does not worsen symptoms or lead to repeat head injury",
+          "body": "After a concussion, recovery is based on finding the balance between rest and activity that does not worsen symptoms or lead to repeat head injury.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1120,13 +1120,13 @@
   },
   {
     "video": {
-      "title": "Post Concussion: Sleep ",
+      "title": "Post-Concussion: Sleep ",
       "url": "https://cdn.jwplayer.com/players/iHpPMPyf-a7o1Fkg4.html",
       "chapter_id": "3"
     },
     "quiz": {
       "questions": [{
-          "body": "Five keys to concussion recovery include all EXCEPT:",
+          "body": "Five keys to concussion recovery include the following, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Sleep"
@@ -1163,7 +1163,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Sleep can help to facilitate recovery",
+          "body": "Sleep can help to facilitate recovery.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1174,7 +1174,7 @@
           ]
         },
         {
-          "body": "Part of a concussion recovery play should include all of the following EXCEPT:",
+          "body": "Part of a concussion recovery play should include all of the following, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Prioritizing sleep"
@@ -1186,12 +1186,12 @@
               "body": "Sleeping in"
             },
             {
-              "body": "Napping all day and interrupting normal night time sleep"
+              "body": "Napping all day and interrupting normal nighttime sleep"
             }
           ]
         },
         {
-          "body": "TRUE or FALSE: To facilitate concussion recovery, athletes can take naps as long as they do not interfere with nighttime sleep",
+          "body": "To facilitate concussion recovery, athletes can take naps as long as they do not interfere with nighttime sleep.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1206,13 +1206,13 @@
   },
   {
     "video": {
-      "title": "Post Concussion: Eat Well, Drink Well",
+      "title": "Post-Concussion: Eat Well, Drink Well",
       "url": "https://cdn.jwplayer.com/players/BOeZ2xeG-a7o1Fkg4.html",
       "chapter_id": "3"
     },
     "quiz": {
       "questions": [{
-          "body": "TRUE or FALSE: There is no magic food or drink for concussion recovery",
+          "body": "TRUE or FALSE: There is no magic food or drink for concussion recovery.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1223,7 +1223,7 @@
           ]
         },
         {
-          "body": "To help facilitate recovery from concussion, athletes can be encouraged to:",
+          "body": "To help facilitate recovery from a concussion, athletes can be encouraged to:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Choose healthy choices"
@@ -1244,13 +1244,13 @@
   },
   {
     "video": {
-      "title": "Post Concussion: Return to Learn",
+      "title": "Post-Concussion: Return to Learn",
       "url": "https://cdn.jwplayer.com/players/5Gjtoqcw-a7o1Fkg4.html",
       "chapter_id": "3"
     },
     "quiz": {
       "questions": [{
-          "body": "TRUE or FALSE: Staying home from school for 5 days after a concussion is recommended",
+          "body": "Staying home from school for 5 days after a concussion is recommended.",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -1270,7 +1270,7 @@
               "body": "Do not expect special accommodations"
             },
             {
-              "body": "It’s better to just miss a lot of days of school than try to go back for partial days"
+              "body": "It’s better just to miss a lot of days of school than try to go back for partial days"
             },
             {
               "body": "Don’t worry about getting behind; anxiety/stress can slow recovery"
@@ -1295,7 +1295,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Strict brain rest has detrimental effects on patients",
+          "body": "Strict brain rest has detrimental effects on patients.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1330,7 +1330,7 @@
   },
   {
     "video": {
-      "title": "Post Concussion: Modifying Screen Time",
+      "title": "Post-Concussion: Modifying Screen Time",
       "url": "https://cdn.jwplayer.com/players/THr4FhkS-a7o1Fkg4.html",
       "chapter_id": "3"
     },
@@ -1377,13 +1377,13 @@
   },
   {
     "video": {
-      "title": "Post Concussion: Return to Play",
+      "title": "Post-Concussion: Return to Play",
       "url": "https://cdn.jwplayer.com/players/IJ4Ev9x1-a7o1Fkg4.html",
       "chapter_id": "3"
     },
     "quiz": {
       "questions": [{
-          "body": "TRUE or FALSE: After a concussion, an athlete should undergo complete physical and cognitive rest until symptoms resolve",
+          "body": "After a concussion, an athlete should undergo complete physical and cognitive rest until symptoms resolve",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -1437,7 +1437,7 @@
           ]
         },
         {
-          "body": "Non-contact activity includes all the following EXCEPT:",
+          "body": "Non-contact activity includes all the following, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Hitting a ball from a tee"
@@ -1454,7 +1454,7 @@
           ]
         },
         {
-          "body": "All of the following can be done as part of non-contact training EXCEPT:",
+          "body": "All of the following can be done as part of non-contact training, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Throwing pitches in baseball"
@@ -1471,7 +1471,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: During the gradual return to play program, activities that increase the heart rate are prohibited",
+          "body": "During the gradual return to play program, activities that increase the heart rate are prohibited.",
           "question_type": "true_false",
           "answers": [{
               "body": "True"
@@ -1502,7 +1502,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: Before participating in a game, athletes must complete a contact practice without symptoms",
+          "body": "Before participating in a game, athletes must complete a contact practice without symptoms",
           "question_type": "true_false",
           "answers": [{
               "body": "False"
@@ -1562,7 +1562,7 @@
           ]
         },
         {
-          "body": "Head CTs are considered to evaluate for all the following EXCEPT:",
+          "body": "Head CTs are considered to evaluate for all the following, except:",
           "question_type": "multiple_choice",
           "answers": [{
               "body": "Intracranial bleed"
@@ -1579,7 +1579,7 @@
           ]
         },
         {
-          "body": "TRUE or FALSE: MRIs are usually done if concussion symptoms persist more than 3-4 weeks to evaluate for an underlying issue",
+          "body": "MRIs are usually done if concussion symptoms persist more than 3-4 weeks to evaluate for an underlying issue.",
           "question_type": "true_false",
           "answers": [{
               "body": "False"

@@ -1,5 +1,5 @@
 body {
-  background-color: #dedede;
+  background-color: #fff;
 }
 .valign-wrapper {
   min-height: calc(100vh - 64px);
@@ -108,4 +108,5 @@ input[type=radio] {
 .btn {
   background-color: #fff;
   color: white;
+  border-radius: 3px;
 }
