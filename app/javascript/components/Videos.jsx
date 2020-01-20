@@ -119,7 +119,7 @@ class Videos extends React.Component {
           <React.Fragment>
             <hgroup className="header" style={{textAlign: 'center'}}>
               <h4 className="header">Congratulations!</h4>
-              <h6>You've completed this quiz. Time to move onto the next one.</h6>
+              <h6>You've completed this section. Now it's time to move onto the next one.</h6>
               <div className="button-container" style={{display: 'flex', justifyContent: 'center', margin: '2rem 0 8rem'}}>
                 <button className="waves-effect waves-light btn black" onClick={this.newQuiz}>
                   Next Lesson
@@ -175,7 +175,7 @@ class Videos extends React.Component {
               </a>
             ))}
           </div>
-          <div className="col s9 video-wrapper nopad">
+          <div className="col s12 video-wrapper nopad">
             <Video video={selectedVideo}/>
             <div className="container">
               <h4 className="header">{selectedVideo.title}</h4>

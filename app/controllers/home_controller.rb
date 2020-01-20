@@ -5,6 +5,9 @@ class HomeController < ApplicationController
     redirect_to user_root_path if current_user
   end
 
+  def about
+  end
+
   def checkout
     return redirect_to '/profile' if !current_user&.profile&.complete
     return redirect_to '/videos' if current_user&.purchased

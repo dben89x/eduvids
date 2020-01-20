@@ -7,8 +7,12 @@ body {
 }
 .nav-wrapper {
   padding: 0 2rem;
-  background-color: #164E7E;
-  box-shadow: 0 1px 3px rgba(0,0,0,.5);
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+h1 {
+  font-size: 24px;
 }
 
 #error_explanation {
@@ -44,14 +48,17 @@ input[type=radio] {
 }
 
 .brand-logo {
-  font-size: 12px;
+  font-size: 22px !important;
+  color: #000 !important;
+  font-weight: 500 !important;
 }
 
 .hero {
   min-height: calc(100vh - 100px);
   width: 100%;
   display: flex;
-  background-image: url('https://concussion360.s3.amazonaws.com/background-image.jpg');
+  background-color: #fafafa;
+  // background-image: url('https://concussion360.s3.amazonaws.com/background-image.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,8 +68,10 @@ input[type=radio] {
 
 .powered {
   font-size: 12px;
-  color: #fff;
+  color: #121212r;
   margin-top: 20px;
+  color: #bd10e0;
+  font-style: italic;
 }
 
 .title {
@@ -70,13 +79,17 @@ input[type=radio] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+  color: #000;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,.1);
   text-align: center;
-  letter-spacing: -1px;
   line-height: .95;
-  font-size: 42px;
+  font-size: 36px;
   width: 60%;}
+
+  .title p {
+    font-weight: 400;
+    font-size: 24px;
+  }
 
 .bottom-footer {
   background-color: #dedede;
@@ -89,6 +102,7 @@ input[type=radio] {
   justify-content: space-around;
   align-items: center;
   display: flex;
+  margin-top: 30px;
  }
 
 .bottom-footer ul {
@@ -103,10 +117,51 @@ input[type=radio] {
 
 .btn-special {
   min-width: 180px;
+  height: auto !important;
+  padding: 5px !important;
+  font-size: 16px !important;
+  color: #fff !important;
+  background-color: #007bff !important;
+  border-radius: 3px !important;
+}
+
+.learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faq {
+  padding-top: 20px;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.faq p {
+  color: #121212;
+  font-size: 18px;
 }
 
 .btn {
-  background-color: #fff;
-  color: white;
-  border-radius: 3px;
+  background-color: transparent !important;
+  color: #007bff !important;
+  border: 1px solid #007bff !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+.btn-blue-fill {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+.btn-gray {
+  border: 1px solid #111 !important;
+  color: #111 !important;
+}
+
+.collection {
+  display: none !important;
 }

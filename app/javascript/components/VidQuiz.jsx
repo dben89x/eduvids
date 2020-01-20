@@ -17,7 +17,7 @@ class VidQuiz extends React.Component {
                 <h2 className="white-text">How To Do This Thing</h2>
                 <br/>
                 <p className="white-text row s6 offset-s3">Remember that thing we talked about earlier? Well, it's all covered here. If you're looking to do this thing, continue reading, because we'll cover that one thing we talked about, and then probably even more stuff.</p>
-                <button className="btn waves-effect black waves-light white-text">Continue reading</button>
+                <button className="btn waves-effect waves-light">Continue reading</button>
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@ class VidQuiz extends React.Component {
           <div className="row container">
             <Video description={video.description}/>
             <div className="container center-align" style={{padding: '1rem'}}>
-              <a href={`/quizzes/${video.quizzes[0].id}`} className="btn waves-effect black waves-light white-text">Take Quiz</a>
+              <a href={`/quizzes/${video.quizzes[0].id}`} className="btn waves-effect waves-light">Take Quiz</a>
             </div>
           </div>
         </div>

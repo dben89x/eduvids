@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get '/users/password', to: 'devise/passwords#new'
   end
   root 'home#index'
+  get "/about" => "home#about"
   get '/results' => 'certificate_attempts#show'
   get '/profile' => 'profiles#edit'
   get '/checkout' => 'home#checkout', as: :checkout
