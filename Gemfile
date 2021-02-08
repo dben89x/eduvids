@@ -71,7 +71,7 @@ gem "cancancan", "~> 3.0"
 
 gem "gibbon", "~> 3.3"
 
-gem "carrierwave", "~> 2.0"
+gem "carrierwave", "~> 2.1"
 
 gem "faker", "~> 2.8"
 
